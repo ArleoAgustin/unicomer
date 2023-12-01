@@ -1,0 +1,211 @@
+@media screen and (min-width: 769px) {
+
+    html, body {
+        height: 100%;
+        font-size: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        overflow-y: hidden;
+        font-family: 'Diphylleia', serif;
+    font-family: 'DM Sans', sans-serif;
+      }
+    
+    
+    
+    
+        .containerBody{
+    
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+    
+    
+    
+        .containerWelcolme{
+    
+            background-image: url(../../assets/img/fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 74%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .moneda {
+            width: 380px;
+            height: 380px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            left: 17.9%;
+            justify-content: center;
+            align-items: center;
+          }
+    
+          #imgLogo{
+            width: 27%;
+          }
+          
+          
+          .sombra {
+            content: "";
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(0%, 0%);
+            box-shadow: rgb(185 185 185) 0px 10px 17px 0px;
+            animation: girarSombra 10s linear infinite;
+          }
+          
+          @keyframes girarSombra {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          
+    
+    
+        .containerTextWelcome{
+            z-index: 1;
+        }
+    
+        h1{
+            font-size: 167%;
+            font-weight: 100;
+        }
+    
+        .textBolder{
+            font-weight: 800;
+        }
+    
+        .containerFormLogin{
+    
+            font-size: 100%;
+            padding: 2% 9%;
+            background: #3d3e87;
+            color: white;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+    
+    
+        .containerAllLogin{
+            width: 100%;
+        }
+    
+        .containerLogo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 12%;
+            margin-top: 0%;
+        }
+    
+        .textLogo{
+            font-size: 100%;
+            margin: 0;
+        }
+    
+    
+        .containerInput{
+            font-size: 100%;
+            margin-bottom: 10%;
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        label{
+            font-size: 100%;
+            margin-bottom: 1.2%;
+        }
+    
+    
+        input{
+            color: white;
+            border: none;
+            background: transparent;
+            border-bottom: 2px solid #d2d2d27d;
+            outline: none;
+            padding: 2% 0%;
+            font-size: 94%;
+        }
+    
+        input:focus{
+            border-bottom: 2px solid rgb(210, 210, 221);
+        }
+    
+        button{
+            padding: 2%;
+            border-radius: 17px;
+            width: 100%;
+            margin: 0% 0% 20% 0%;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Diphylleia', serif;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: bold;
+            font-size: 100%;
+        }
+    
+        button:hover{
+            background-color: #e0e8ed90;
+        }
+    
+        .containerBtnSubmit{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .containerVirtualKeyboard{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        img{
+            width: 18px;
+            margin-right: 7px;
+        }
+    
+        h4{
+            margin: 0;
+            font-size: 100%;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+    
+        h4:hover{
+            color: rgb(207, 212, 215);
+        }
+    
+        .textRegister{
+            font-size: 100%;
+            margin-top: 19%;
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            transition: color 0.3s ease;
+        }
+    
+        .textRegister:hover{
+            color: rgb(207, 212, 215);
+        }
+    
+      }
